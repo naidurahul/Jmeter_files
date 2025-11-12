@@ -25,7 +25,7 @@
           <stringProp name="TestPlan.comments">master manifest</stringProp>
           <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized.net)}</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm6)}/master.m3u8?${__P(token, hdnts=exp=1762948849~acl=%2Fhls%2Flive%2F2027287%2Fwlwuscastrm6%2F*~hmac=1cd723b073b61c5fff9cc827364750072f31)}e1ea4bed02ec79754fc63d3d4d6a</stringProp>
+          <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm6)}/master.m3u8?${__P(token, hdnts=exp=1762948849~acl=%2Fhls%2Flive%2F2027287%2Fwlwuscastrm6%2F*~hmac=1cd723b073b61c5fff9cc827364750072f31e1ea4bed02ec79754fc63d3d4d6a)}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
