@@ -23,9 +23,9 @@
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="master">
           <stringProp name="TestPlan.comments">master manifest</stringProp>
-          <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized.net)}</stringProp>
+          <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized-staging.net)}</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm6)}/master.m3u8?${__P(token, hdnts=exp=1762948849~acl=%2Fhls%2Flive%2F2027287%2Fwlwuscastrm6%2F*~hmac=1cd723b073b61c5fff9cc827364750072f31e1ea4bed02ec79754fc63d3d4d6a)}</stringProp>
+          <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm3)}/master.m3u8?${__P(token, hdnts=exp=1763034446~acl=%2Fhls%2Flive%2F2027287%2Fwlwuscastrm3%2F*~hmac=3f62ba3389d42e28e6b4b9218d6ccb118cb54bf50b5ca643e5423f949b5ce82c)}</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -63,9 +63,9 @@
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="profilemanifest">
             <stringProp name="TestPlan.comments">profile manifest</stringProp>
-            <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized.net)}</stringProp>
+            <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized-staging.net)}</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
-            <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm6)}/${Chunks}</stringProp>
+            <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm3)}/${Chunks}</stringProp>
             <stringProp name="HTTPSampler.method">GET</stringProp>
             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
@@ -172,9 +172,9 @@ if (matchCount &gt; 0) {
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="mrouter" enabled="true">
               <stringProp name="TestPlan.comments">mrouter url</stringProp>
-              <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized.net)}</stringProp>
+              <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized-staging.net)}</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
-              <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm6)}/${tkn}/${mrouter_url}</stringProp>
+              <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm3)}/${tkn}/${mrouter_url}</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
