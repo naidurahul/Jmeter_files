@@ -175,7 +175,7 @@ if (matchCount &gt; 0) {
               <stringProp name="HTTPSampler.domain">${__P(serverName, willowlivenew.akamaized-staging.net)}</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
               <stringProp name="HTTPSampler.path">${__P(path, hls/live/2027287/wlwuscastrm3)}/${tkn}/${mrouter_url}</stringProp>
-              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
               <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.postBodyRaw">false</boolProp>
